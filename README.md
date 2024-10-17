@@ -1,1 +1,1 @@
-Loe mind
+Teeme laiendava veebilehe kassivarjupaigale. 
