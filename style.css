@@ -1,1 +1,99 @@
-css fail
+html{
+    font-family:"Anaheim", Arial, sans-serif;
+}
+
+body{
+    margin:0px;
+}
+
+/* Päis */
+
+header{
+    background-color:rgb(255, 255, 255);
+    width:100%;
+
+    /*position:sticky;*/
+    padding:5px;
+    display:inline;
+   /* align-items:center;*/
+}
+
+header img{
+    width:20%;
+    display:inline;
+}
+
+nav {
+    float:right;
+    margin-right:2%;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    font-size:25px;
+}
+
+
+nav a{    
+    color:#5F5E5E;
+    text-decoration:none;
+    display:inline-block;
+    padding:10px;
+}
+
+nav li :hover,
+nav li :active{
+    color:#000000;
+}
+
+nav li:last-child a{
+    border-radius: 10px;
+    background-color: #EB6124;
+    color: #ffffff;
+}
+
+nav li:last-child a:hover{
+    background-color: #b23000;
+}
+
+
+/* Jalus */
+
+footer{
+    background-color: #5F5E5E;
+    width: 100%;
+    bottom: 0px;   
+    display:flex;
+}
+
+footer div{
+    width:33%;
+    padding-left:10%;
+    color:white;
+    
+}
+
+/* Põhitekst */
+
+
+h1 {
+    color:white;
+    background-color:black;
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    text-align:center;
+    padding:10px
+}
+
+h1#test{
+    background-image: url("Logo.png");
+    
+}
+
+main{
+    
+}
+
+
