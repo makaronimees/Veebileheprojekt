@@ -102,7 +102,12 @@ h1 {
 }
 
 main{
+    
+}
 
+main section {
+    margin:5%;
+    padding:5%;
 }
 
 /* Meist */
@@ -112,17 +117,17 @@ main#meist h1{
     background-color: black;
 }
 
-main#meist div{
+main#meist section{
     display:flex;
     margin: 5%;
 }
 
-main#meist div img{
+main#meist section img{
     min-width:20%;
     display:inline;
 }
 
-main#meist div section{
+main#meist section div{
     display:inline;
     padding: 5px 20px; 
 }
@@ -132,6 +137,6 @@ main#meist div section{
 
 main#galerii section{
     text-align:center;
-    margin:5%;
-    padding:5%;
 }
+
+/* Hoolitsemine */
