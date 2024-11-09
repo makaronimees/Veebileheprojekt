@@ -1,9 +1,11 @@
 html{
     font-family:"Anaheim", Arial, sans-serif;
+    overflow:visible;
 }
 
 body{
     margin:0px;
+    overflow:visible;
 }
 
 /* Päis */
@@ -11,27 +13,39 @@ body{
 header{
     background-color:rgb(255, 255, 255);
     width:100%;
-
-    /*position:sticky;*/
+    top:0px;
+    min-height:60px;
+    position:sticky;
     padding:5px;
-    display:inline;
-   /* align-items:center;*/
+    margin-bottom:0px;
 }
 
 header img{
-    width:20%;
+    height:70px;
     display:inline;
 }
 
 nav {
     float:right;
     margin-right:2%;
+    font-size:25px;
 }
+@media screen and (max-width: 900px) {
+    header img{
+	height:50px;
+    }
+    nav{
+	font-size:18px;
+    }
+    
+}
+
+
 
 nav ul{
     display:flex;
     list-style:none;
-    font-size:25px;
+    
 }
 
 
@@ -84,16 +98,33 @@ h1 {
     background-repeat:no-repeat;
     background-position:center;
     text-align:center;
-    padding:10px
-}
-
-h1#test{
-    background-image: url("Pildid/Logo.png");
-    
+    padding:10px;	  
 }
 
 main{
-    
+
+}
+
+/* Meist */
+
+main#meist h1{
+    background-image: url("Pildid/Logo.png");
+    background-color: black;
+}
+
+main#meist div{
+    display:flex;
+    margin: 5%;
+}
+
+main#meist div img{
+    min-width:20%;
+    display:inline;
+}
+
+main#meist div section{
+    display:inline;
+    padding: 5px 20px; 
 }
 
 
