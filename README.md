@@ -3,5 +3,11 @@ Loome Varjupaikade MTÜ-le pisikese laiendi, kus on
 2. galerii meie top pickiidest(võibolla hoopis näiteks kõige vanemad asukad, igastahes meie selekteeritud loomad)
 3. vaheleht hoolitsemisjuhenditega erinevate kasside ning koerte jaoks
 
-https://www.figma.com/design/EP7rrO7OLWkTYBXoYJXn3i/Figma-basics?node-id=1669-162202&t=QZif6MIGE6BvJJF8-1
-https://varjupaik.ee
+
+Rühma liikmed:
+Pilleriin Sillakivi
+Harald Jõgi
+Georg Järvis
+
+Link rühmatöö plaanile: https://docs.google.com/spreadsheets/d/1LRX7n21c76cza-Dn7F73LMVO7jRwnuVYF0FG40fuUn4/edit?gid=0#gid=0 
+
