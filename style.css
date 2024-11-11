@@ -50,7 +50,7 @@ nav ul{
 
 
 nav a{    
-    color:#5F5E5E;
+    color:rgb(95, 94, 94);
     text-decoration:none;
     display:inline-block;
     padding:10px;
@@ -58,24 +58,24 @@ nav a{
 
 nav li :hover,
 nav li :active{
-    color:#000000;
+    color:rgb(0, 0, 0);
 }
 
 nav li:last-child a{
     border-radius: 10px;
-    background-color: #EB6124;
-    color: #ffffff;
+    background-color: rgb(235, 97, 36);
+    color: rgb(255, 255, 255);
 }
 
 nav li:last-child a:hover{
-    background-color: #b23000;
+    background-color: rgb(178, 48, 0);
 }
 
 
 /* Jalus */
 
 footer{
-    background-color: #5F5E5E;
+    background-color: rgb(95, 94, 94);
     width: 100%;
     bottom: 0px;   
     display:flex;
@@ -84,7 +84,7 @@ footer{
 footer div{
     width:33%;
     padding-left:10%;
-    color:white;
+    color:rgb(255, 255, 255);
     
 }
 
@@ -92,8 +92,8 @@ footer div{
 
 
 h1 {
-    color:white;
-    background-color:black;
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
     background-size:contain;
     background-repeat:no-repeat;
     background-position:center;
@@ -114,7 +114,7 @@ main section {
 
 main#meist h1{
     background-image: url("Pildid/Logo.png");
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 main#meist section{
