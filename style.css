@@ -145,9 +145,7 @@ main#galerii section{
 .galerii {
     background-image: url("https://varjupaik.ee/photos/suviste_large.jpg");
     min-height: 500px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 5%;
+    margin: 5% 15%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
