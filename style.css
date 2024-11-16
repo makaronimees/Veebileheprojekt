@@ -142,44 +142,55 @@ main#galerii section{
 /* Hoolitsemine */
 
 /* Javascript galerii */
+
 .galerii {
-    background-image: url("https://varjupaik.ee/photos/suviste_large.jpg");
-    min-height: 500px;
-    margin: 5% 15%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 500px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    background-image: url("https://varjupaik.ee/photos/suviste_large.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 .tekstiKast {
     background-color: rgba(207, 207, 207, 0.8);
     text-align: center;
     margin-left: 45%;
-    margin-right: 10%;
+    margin-right: 5%;
     padding: 10px;
 }
+
 .nool {
     background-color: rgba(0, 0, 0, 0);
     border: none;
 }
+
 .paremnool {
     margin-right: 5%;
 }
+
 .vasaknool {
     margin-left: 5%;
 }
+
 .nooleIkoon {
     min-width: 25px;
     min-height: 25px;
 }
+
 .nooleIkoon:hover {
     cursor: pointer;
 }
+
 .nimeTekst {
     font-weight: bold;
 }
+
 .tekstivali {
     display: none;
 }
