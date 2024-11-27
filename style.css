@@ -115,15 +115,22 @@ main section {
 /* Meist */
 
 main#meist h1{
-    background-image: url("Pildid/kass1.jpg");
+    background-image: url("https://i.chzbgr.com/full/10384483072/h960A9BBA/1-4-416-delete-home-pg-up-pg-dn-end");
+    background-position-y: -400px;
+    
     background-color: rgb(0, 0, 0);
+    color:white;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    padding:15%;
+    padding-right: 60%;
+    
 }
 
 main#meist section{
     display:flex;
     margin: auto;
+    max-width: 60%;
 }
 
 main#meist section img{
@@ -133,19 +140,55 @@ main#meist section img{
 }
 
 main#meist section div{
+    width:60%;
     display:inline;
     padding: 5px 20px;
 }
 
 
 /* Galerii */
+main#galerii h1{
+    background-image: url("https://i.pinimg.com/736x/e2/ba/22/e2ba2245dc18952031904974cef4c68a.jpg");
+    background-color: rgb(0, 0, 0);
+    color:black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding:15%;
+    padding-right: 60%;
+    
+}
 
 main#galerii section{
     text-align:center;
 }
+main#galerii section img{
+    width:20%;
+    max-height:235px;
+    object-fit: cover;
+    padding:10px;
+
+}
 
 /* Hoolitsemine */
 
+main#hool h1{
+    background-image: url("Pildid/kass2.jpg");
+    background-color: rgb(0, 0, 0);
+    color:black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding:15%;
+    padding-right: 60%;
+    
+}
+#hool section{
+    max-width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+
+
+}
 /* Javascript galerii */
 
 .galerii {
