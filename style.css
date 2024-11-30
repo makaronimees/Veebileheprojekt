@@ -20,46 +20,43 @@ header{
     padding:5px;
     margin-bottom:0px;
     z-index: 5;
-}
 
-header img{
-    height:70px;
-    display:inline;
+    img{
+	height:70px;
+	display:inline;
+    }
 }
-
 nav {
     float:right;
     margin-right:2%;
     font-size:20px;
-}
+    
+    ul{
+	display:flex;
+	list-style:none; 
+    }
+    
+    a{    
+	color:rgb(95, 94, 94);
+	text-decoration:none;
+	display:inline-block;
+	padding:10px;
+    }
 
-
-nav ul{
-    display:flex;
-    list-style:none; 
-}
-
-
-nav a{    
-    color:rgb(95, 94, 94);
-    text-decoration:none;
-    display:inline-block;
-    padding:10px;
-}
-
-nav li :hover,
-nav li :active{
-    color:rgb(0, 0, 0);
-}
-
-nav li:last-child a{
-    border-radius: 10px;
-    background-color: rgb(235, 97, 36);
-    color: rgb(255, 255, 255);
-}
-
-nav li:last-child a:hover{
-    background-color: rgb(178, 48, 0);
+    li :hover,
+    li :active{
+	color:rgb(0, 0, 0);
+    }
+    
+    li:last-child a{
+	border-radius: 10px;
+	background-color: rgb(235, 97, 36);
+	color: rgb(255, 255, 255);
+    }
+    
+    li:last-child a:hover{
+	background-color: rgb(178, 48, 0);
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -83,28 +80,36 @@ footer{
     width: 100%;
     bottom: 0px;   
     display:flex;
-}
 
-footer div{
-    width:30%;
-    padding-left:6%;
-    padding-right:6%;
-    padding-top:3%;
-    color:rgb(255, 255, 255);
-    
-}
+    div{
+	width:30%;
+	padding-left:6%;
+	padding-right:6%;
+	padding-top:3%;
+	color:rgb(255, 255, 255);
+    }
 
-footer a{
-    border-radius: 10px;
-    background-color: rgb(235, 97, 36);
-    color: rgb(255, 255, 255);
-    text-decoration:none;
-    display:inline-block;
-    padding:10px;
+    a{
+	border-radius: 10px;
+	background-color: rgb(235, 97, 36);
+	color: rgb(255, 255, 255);
+	text-decoration:none;
+	display:inline-block;
+	padding:10px;
 }
-
-footer a:hover{
-    background-color: rgb(178, 48, 0);
+    a:hover{
+	background-color: rgb(178, 48, 0);
+    }
+}
+@media screen and (max-width: 710px) {
+    footer{
+	display:block;
+	div {
+	    width:80%;
+	    float:center;
+	    
+	}
+    }
 }
 /* Põhitekst */
 
@@ -120,16 +125,15 @@ h1 {
 }
 
 main{
-    
-}
 
-main section {
-    margin:5%;
-    padding:5%;
-}
+    section {
+	margin:5%;
+	padding:5%;
+    }
 
-main h1 {
-    background-attachment: fixed;
-    padding:15%;
-    padding-right: 60%;
+    h1 {
+	background-attachment: fixed;
+	padding:15%;
+	padding-right: 60%;
+    }
 }
