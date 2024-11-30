@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <script src="javascript.js" defer></script>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="javascript-galerii.css">
         <title>Galerii demo</title>
     </head>
     <body>
         <div class="valimineGalerii">
             <div class="valikuNupud">
                 <div class="puhver"></div>
-                <button onclick="muudaGaleriiPilti(0)" class="nupp valikuNupp valikuNuppAktiivne" id="nupp0" disabled></button>
+                <button onclick="muudaGaleriiPilti(0)" class="nupp valikuNupp valikuNuppAktiivne" id="nupp0"></button>
                 <button onclick="muudaGaleriiPilti(1)" class="nupp valikuNupp" id="nupp1"></button>
                 <button onclick="muudaGaleriiPilti(2)" class="nupp valikuNupp" id="nupp2"></button>
                 <button onclick="muudaGaleriiPilti(3)" class="nupp valikuNupp" id="nupp3"></button>
@@ -22,7 +23,7 @@
             <button onclick="valiJargminePilt(-1)" class="nupp nool vasaknool"><img class="nooleIkoon" src="Pildid/Vasak_Nool.svg" alt="vasaknool"></button>
             <button onclick="valiJargminePilt(1)" class="nupp nool paremnool"><img class="nooleIkoon" src="Pildid/Parem_Nool.svg" alt="paremnool"></button>
             <div class="sisemineGalerii">
-                <div class="galeriiPilt" id="pilt0" style="background-image: url(https://varjupaik.ee/photos/suviste_large.jpg); display: flex; order: 1;">
+                <div class="galeriiPilt galeriiPiltAktiivne" id="pilt0" style="background-image: url(https://varjupaik.ee/photos/suviste_large.jpg);">
                     <div class="tekstiKast">
                         <p>Varjupaiga hoolealused jõuavad varem või hiljem selle päris oma inimese juurde, oma uude päriskoju. Eks ka Taal, kellega Tallinna varjupaigas sõbraks sain. Ole hea, hakka püsiannetajaks, et Taali ja tema saatusekaaslaste elu muuta. Usu mind, sa ei kahetse!</p>
                         <p class="nimeTekst">- Uku Suviste</p>

@@ -7,6 +7,8 @@
       content="See veebileht on varjupaik.ee mitteametlik laiend, mis on koostatud Sissejuhatus erialasse aine raames">
     
     <link rel="stylesheet" href="style.css">
+	  <link rel="stylesheet" href="galerii.css">
+    <link rel="stylesheet" href="javascript-galerii.css">
     <script src="javascript.js" defer></script>
     <link rel="icon" type="image/x-icon" href="Pildid/fav.ico">
     
@@ -45,7 +47,7 @@
 	<h2>Haraldi Valik</h2>
 	<div>
 		<a href="https://varjupaik.ee/loomad/84136" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/462570080_1149455846778612_4607370264871478103_n%20(1)_medium.webp" alt="Veera"></a>
-		<a href="https://varjupaik.ee/loomad/84130" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/IMG_8711%20(1)_medium.webp"></a>
+		<a href="https://varjupaik.ee/loomad/84130" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/IMG_8711%20(1)_medium.webp" alt="84130"></a>
 		<a href="https://varjupaik.ee/loomad/84135" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/462575191_1500283200740106_7491842982213900654_n%20(3)_block.webp" alt="Katta"></a>
 	</div>
       </section>
@@ -53,71 +55,71 @@
       <section>
 	<h2>Georgi Valik</h2>
 	<div>
-		<a href="loomalink" target="_blank"><img src="loomapilt" alt="loomanimi"></a>
-		<a href="loomalink" target="_blank"><img src="loomapilt" alt="loomanimi"></a>
-		<a href="loomalink" target="_blank"><img src="loomapilt" alt="loomanimi"></a>
+		<a href="https://varjupaik.ee/loomad/84033" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/IMG_20241105_165438_large.webp" alt="Toby"></a>
+		<a href="https://varjupaik.ee/loomad/83954" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/241031V%C3%B5ruvaldO1_large.webp" alt="Hektor"></a>
+		<a href="https://varjupaik.ee/loomad/83854" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/241023V%C3%B5ruvald%2033_huge.webp" alt="Aadu"></a>
 	</div>
       </section>
 
-	<div class="valimineGalerii">
-            <div class="valikuNupud">
-                <div class="puhver"></div>
-                <button onclick="muudaGaleriiPilti(0)" class="nupp valikuNupp valikuNuppAktiivne" id="nupp0" disabled></button>
-                <button onclick="muudaGaleriiPilti(1)" class="nupp valikuNupp" id="nupp1"></button>
-                <button onclick="muudaGaleriiPilti(2)" class="nupp valikuNupp" id="nupp2"></button>
-                <button onclick="muudaGaleriiPilti(3)" class="nupp valikuNupp" id="nupp3"></button>
-                <button onclick="muudaGaleriiPilti(4)" class="nupp valikuNupp" id="nupp4"></button>
-                <button onclick="muudaGaleriiPilti(5)" class="nupp valikuNupp" id="nupp5"></button>
-                <button onclick="muudaGaleriiPilti(6)" class="nupp valikuNupp" id="nupp6"></button>
-                <div class="puhver"></div>
+      <div class="valimineGalerii">
+        <div class="valikuNupud">
+            <div class="puhver"></div>
+            <button onclick="muudaGaleriiPilti(0)" class="nupp valikuNupp valikuNuppAktiivne" id="nupp0"></button>
+            <button onclick="muudaGaleriiPilti(1)" class="nupp valikuNupp" id="nupp1"></button>
+            <button onclick="muudaGaleriiPilti(2)" class="nupp valikuNupp" id="nupp2"></button>
+            <button onclick="muudaGaleriiPilti(3)" class="nupp valikuNupp" id="nupp3"></button>
+            <button onclick="muudaGaleriiPilti(4)" class="nupp valikuNupp" id="nupp4"></button>
+            <button onclick="muudaGaleriiPilti(5)" class="nupp valikuNupp" id="nupp5"></button>
+            <button onclick="muudaGaleriiPilti(6)" class="nupp valikuNupp" id="nupp6"></button>
+            <div class="puhver"></div>
+        </div>
+        <button onclick="valiJargminePilt(-1)" class="nupp nool vasaknool"><img class="nooleIkoon" src="Pildid/Vasak_Nool.svg" alt="vasaknool"></button>
+        <button onclick="valiJargminePilt(1)" class="nupp nool paremnool"><img class="nooleIkoon" src="Pildid/Parem_Nool.svg" alt="paremnool"></button>
+        <div class="sisemineGalerii">
+            <div class="galeriiPilt galeriiPiltAktiivne" id="pilt0" style="background-image: url(https://varjupaik.ee/photos/suviste_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Varjupaiga hoolealused jõuavad varem või hiljem selle päris oma inimese juurde, oma uude päriskoju. Eks ka Taal, kellega Tallinna varjupaigas sõbraks sain. Ole hea, hakka püsiannetajaks, et Taali ja tema saatusekaaslaste elu muuta. Usu mind, sa ei kahetse!</p>
+                    <p class="nimeTekst">- Uku Suviste</p>
+                </div>
             </div>
-            <button onclick="valiJargminePilt(-1)" class="nupp nool vasaknool"><img class="nooleIkoon" src="Pildid/Vasak_Nool.svg" alt="vasaknool"></button>
-            <button onclick="valiJargminePilt(1)" class="nupp nool paremnool"><img class="nooleIkoon" src="Pildid/Parem_Nool.svg" alt="paremnool"></button>
-            <div class="sisemineGalerii">
-                <div class="galeriiPilt" id="pilt0" style="background-image: url(https://varjupaik.ee/photos/suviste_large.jpg); display: flex; order: 1;">
-                    <div class="tekstiKast">
-                        <p>Varjupaiga hoolealused jõuavad varem või hiljem selle päris oma inimese juurde, oma uude päriskoju. Eks ka Taal, kellega Tallinna varjupaigas sõbraks sain. Ole hea, hakka püsiannetajaks, et Taali ja tema saatusekaaslaste elu muuta. Usu mind, sa ei kahetse!</p>
-                        <p class="nimeTekst">- Uku Suviste</p>
-                    </div>
+            <div class="galeriiPilt" id="pilt1" style="background-image: url(https://varjupaik.ee/photos/Rey_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Varjupaikade MTÜ toimimine sõltub eelkõige annetustest, seega kutsun üles toetama selle õilsa organisatsiooni tööd püsiannetusega! Hüljatud loomade saatus on paljuski just Sinu kätes. Aita muuta koduta loomade elu ja hakka püsitoetajaks!</p>
+                    <p class="nimeTekst">- Rita Ray</p>
                 </div>
-                <div class="galeriiPilt" id="pilt1" style="background-image: url(https://varjupaik.ee/photos/Rey_large.jpg);">
-                    <div class="tekstiKast">
-                        <p>Varjupaikade MTÜ toimimine sõltub eelkõige annetustest, seega kutsun üles toetama selle õilsa organisatsiooni tööd püsiannetusega! Hüljatud loomade saatus on paljuski just Sinu kätes. Aita muuta koduta loomade elu ja hakka püsitoetajaks!</p>
-                        <p class="nimeTekst">- Rita Ray</p>
-                    </div>
+            </div>
+            <div class="galeriiPilt" id="pilt2" style="background-image: url(https://varjupaik.ee/photos/Tsopp_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Aastaringselt satub varjupaika sadade kaupa kassipoegi, enamasti tõbised ja näljas. Varjupaikade MTÜ aitab soovimatute pesakondade arvukust ohjata, kastreerides-steriliseerides uude koju minevad loomad. Annetades aitad ära hoida üha uute loomade tänavale sattumist.</p>
+                    <p class="nimeTekst">- Jürgen Zopp</p>
                 </div>
-                <div class="galeriiPilt" id="pilt2" style="background-image: url(https://varjupaik.ee/photos/Tsopp_large.jpg);">
-                    <div class="tekstiKast">
-                        <p>Aastaringselt satub varjupaika sadade kaupa kassipoegi, enamasti tõbised ja näljas. Varjupaikade MTÜ aitab soovimatute pesakondade arvukust ohjata, kastreerides-steriliseerides uude koju minevad loomad. Annetades aitad ära hoida üha uute loomade tänavale sattumist.</p>
-                        <p class="nimeTekst">- Jürgen Zopp</p>
-                    </div>
+            </div>
+            <div class="galeriiPilt" id="pilt3" style="background-image: url(https://varjupaik.ee/photos/Lemsalu-1_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Mind puudutab väga, kui lemmikloomad hooletusse jäetuna varjupaika jõuavad. Toetan Varjupaikade MTÜ tööd, sest minu püsiannetus aitab hüljatud loomadele uued armastavad kodud leida. Ühine minuga – ka kõige väiksem toetus muudab väga paljude loomade elu!</p>
+                    <p class="nimeTekst">- Liis Lemsalu</p>
                 </div>
-                <div class="galeriiPilt" id="pilt3" style="background-image: url(https://varjupaik.ee/photos/Lemsalu-1_large.jpg);">
-                    <div class="tekstiKast">
-                        <p>Mind puudutab väga, kui lemmikloomad hooletusse jäetuna varjupaika jõuavad. Toetan Varjupaikade MTÜ tööd, sest minu püsiannetus aitab hüljatud loomadele uued armastavad kodud leida. Ühine minuga – ka kõige väiksem toetus muudab väga paljude loomade elu!</p>
-                        <p class="nimeTekst">- Liis Lemsalu</p>
-                    </div>
+            </div>
+            <div class="galeriiPilt" id="pilt4" style="background-image: url(https://varjupaik.ee/photos/Anett%20Kontaveit_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Pea pooltes Eesti kodudes on lemmikloom pere truu kaaslane. Ja ometi jõuab varjupaika uskumatult palju hüljatud kasse-koeri. Toeta Varjupaikade MTÜ tööd loomadele uue võimaluse andmisel! Mina igatahes toetan.</p>
+                    <p class="nimeTekst">- Anett Kontraveit</p>
                 </div>
-                <div class="galeriiPilt" id="pilt4" style="background-image: url(https://varjupaik.ee/photos/Anett%20Kontaveit_large.jpg);">
-                    <div class="tekstiKast">
-                        <p>Pea pooltes Eesti kodudes on lemmikloom pere truu kaaslane. Ja ometi jõuab varjupaika uskumatult palju hüljatud kasse-koeri. Toeta Varjupaikade MTÜ tööd loomadele uue võimaluse andmisel! Mina igatahes toetan.</p>
-                        <p class="nimeTekst">- Anett Kontraveit</p>
-                    </div>
+            </div>
+            <div class="galeriiPilt" id="pilt5" style="background-image: url(https://varjupaik.ee/photos/Kanepi-1_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Keskmiselt kulub 3 kuud, et leida varjupaika sattunud loomale uus kodu. Koeraomanikuna tean, kui oluline on loomale, et tal oleks päris oma inimene. Hakka ka sina annetajaks ja aita varjupaiga hoolealustel lõpuks koju jõuda!</p>
+                    <p class="nimeTekst">- Kaia Kanepi</p>
                 </div>
-                <div class="galeriiPilt" id="pilt5" style="background-image: url(https://varjupaik.ee/photos/Kanepi-1_large.jpg);">
-                    <div class="tekstiKast">
-                        <p>Keskmiselt kulub 3 kuud, et leida varjupaika sattunud loomale uus kodu. Koeraomanikuna tean, kui oluline on loomale, et tal oleks päris oma inimene. Hakka ka sina annetajaks ja aita varjupaiga hoolealustel lõpuks koju jõuda!</p>
-                        <p class="nimeTekst">- Kaia Kanepi</p>
-                    </div>
-                </div>
-                <div class="galeriiPilt" id="pilt6" style="background-image: url(https://varjupaik.ee/photos/Ivanov-1_large.jpg);">
-                    <div class="tekstiKast">
-                        <p>Ütlen otse ja ilustamata: varjupaiga loomade elu sõltub annetustest. Toeta neid, sest kodutuks jäänud lemmikloomad pole endale ise sellist saatust valinud. Vastutame meie, inimesed.</p>
-                        <p class="nimeTekst">- Vladimir Ivanov</p>
-                    </div>
+            </div>
+            <div class="galeriiPilt" id="pilt6" style="background-image: url(https://varjupaik.ee/photos/Ivanov-1_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Ütlen otse ja ilustamata: varjupaiga loomade elu sõltub annetustest. Toeta neid, sest kodutuks jäänud lemmikloomad pole endale ise sellist saatust valinud. Vastutame meie, inimesed.</p>
+                    <p class="nimeTekst">- Vladimir Ivanov</p>
                 </div>
             </div>
         </div>
+      </div>
           
       
     </main>

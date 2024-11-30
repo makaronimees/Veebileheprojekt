@@ -1,3 +1,5 @@
+// Autor: Georg
+
 var nupud = document.getElementsByClassName("nupp");
 var sisemineGalerii = document.getElementsByClassName("sisemineGalerii")[0];
 

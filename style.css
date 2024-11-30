@@ -36,8 +36,7 @@ nav {
 
 nav ul{
     display:flex;
-    list-style:none;
-    
+    list-style:none; 
 }
 
 
@@ -65,13 +64,13 @@ nav li:last-child a:hover{
 
 @media screen and (max-width: 800px) {
     header {
-	height: 135px;
-	img {
+	    height: 135px;
+    }
+    img {
 	    display:block;
 	}
-    }
     nav{
-	float: left;
+	    float: left;
     }
     
 }
@@ -129,180 +128,8 @@ main section {
     padding:5%;
 }
 
-/* Meist */
-
-main#meist h1{
-    background-image: url("https://i.chzbgr.com/full/10384483072/h960A9BBA/1-4-416-delete-home-pg-up-pg-dn-end");
-    background-position-y: -400px;
-    
-    background-color: rgb(0, 0, 0);
-    color:white;
+main h1 {
     background-attachment: fixed;
-    background-repeat: no-repeat;
     padding:15%;
     padding-right: 60%;
-    
-}
-
-main#meist section{
-    display:flex;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 60%;
-}
-
-main#meist section img{
-    width:20%;
-    display:inline;
-    
-}
-
-main#meist section div{
-    width:60%;
-    display:inline;
-    padding: 5px 20px;
-}
-
-
-/* Galerii */
-main#galerii h1{
-    background-image: url("https://i.pinimg.com/736x/e2/ba/22/e2ba2245dc18952031904974cef4c68a.jpg");
-    background-color: rgb(0, 0, 0);
-    color:black;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    padding:15%;
-    padding-right: 60%;
-    
-}
-
-main#galerii section{
-    text-align:center;
-}
-main#galerii section img{
-    width:20%;
-    height:235px;
-    object-fit: cover;
-    padding:10px;
-
-}
-
-/* Hoolitsemine */
-
-main#hool h1{
-    background-image: url("Pildid/kass2.jpg");
-    background-color: rgb(0, 0, 0);
-    color:black;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    padding:15%;
-    padding-right: 60%;
-    
-}
-#hool section{
-    max-width:60%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: large;
-
-
-}
-/* Javascript galerii */
-
-.valimineGalerii {
-    margin: auto;
-    display: block;
-    position: relative;
-    overflow-x: hidden;
-    max-width: 1000px;
-}
-
-.sisemineGalerii {
-    display: flex;
-}
-
-.galeriiPilt {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    min-width: 100%;
-    min-height: 500px;
-}
-
-.tekstiKast {
-    background-color: rgba(207, 207, 207, 0.8);
-    text-align: center;
-    margin-left: 45%;
-    margin-right: 5%;
-    padding: 10px;
-}
-
-.valikuNupud {
-    display: flex;
-    justify-content: space-around;
-    position: absolute;
-    width: 100%;
-    top: 95%;
-}
-
-.nupp {
-    border: none;
-    z-index: 2;
-}
-
-.nupp:hover {
-    cursor: pointer;
-}
-
-.valikuNupp {
-    width: 20px;
-    height: 5px;
-    margin-left: 5px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.valikuNuppAktiivne {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.nool {
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    top: 50%;
-}
-
-.paremnool {
-    right: 10px;
-}
-
-.vasaknool {
-    left: 10px;
-}
-
-.nooleIkoon {
-    width: 25px;
-    height: 25px;
-}
-
-.nimeTekst {
-    font-weight: bold;
-}
-
-.puhver {
-    width: 30%;
-}
-
-.vasak {
-    transform: translateX(-100%);
-    transition: 1s;
-}
-
-.parem {
-    justify-content: right;
-    transform: translateX(100%);
-    transition: 1s;
 }
