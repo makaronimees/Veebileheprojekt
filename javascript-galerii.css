@@ -1,0 +1,102 @@
+.valimineGalerii {
+    margin: auto;
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 1000px;
+}
+
+.sisemineGalerii {
+    display: flex;
+}
+
+.galeriiPilt {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    min-height: 500px;
+}
+
+.galeriiPiltAktiivne {
+    display: flex;
+    order: 1;
+}
+
+.tekstiKast {
+    background-color: rgba(207, 207, 207, 0.8);
+    text-align: center;
+    margin-left: 45%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+.valikuNupud {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    top: 95%;
+}
+
+.nupp {
+    border: none;
+    z-index: 2;
+}
+
+.nupp:hover {
+    cursor: pointer;
+}
+
+.valikuNupp {
+    width: 20px;
+    height: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.valikuNuppAktiivne {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.nool {
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 50%;
+}
+
+.paremnool {
+    right: 10px;
+}
+
+.vasaknool {
+    left: 10px;
+}
+
+.nooleIkoon {
+    width: 25px;
+    height: 25px;
+}
+
+.nimeTekst {
+    font-weight: bold;
+}
+
+.puhver {
+    width: 30%;
+}
+
+.vasak {
+    transform: translateX(-100%);
+    transition: 1s;
+}
+
+.parem {
+    justify-content: right;
+    transform: translateX(100%);
+    transition: 1s;
+}

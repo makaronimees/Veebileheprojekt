@@ -1,0 +1,10 @@
+main#hool h1{
+    background-image: url("Pildid/kass2.jpg");
+    color:black;
+}
+#hool section{
+    max-width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+}

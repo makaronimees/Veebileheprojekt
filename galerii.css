@@ -1,0 +1,14 @@
+main#galerii h1{
+    background-image: url("https://i.pinimg.com/736x/e2/ba/22/e2ba2245dc18952031904974cef4c68a.jpg");
+    color:black;
+}
+
+main#galerii section{
+    text-align:center;
+}
+main#galerii section img{
+    width:20%;
+    height:235px;
+    object-fit: cover;
+    padding:10px;
+}

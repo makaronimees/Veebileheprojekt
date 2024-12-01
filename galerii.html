@@ -4,14 +4,16 @@
     <meta charset="utf-8">
     <meta
       name="description"
-      content="See on veebilehe [lehe nimi] kirjeldus">
-
-    <link rel="stylesheet" href="style.css" />
+      content="See veebileht on varjupaik.ee mitteametlik laiend, mis on koostatud Sissejuhatus erialasse aine raames">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="galerii.css">
+    <link rel="stylesheet" href="javascript-galerii.css">
     <script src="javascript.js" defer></script>
     <link rel="icon" type="image/x-icon" href="Pildid/fav.ico">
     
 
-    <title>Avaleht</title>
+    <title>Galerii - Varjupaikade MTÜ</title>
 
   </head>
   <body>
@@ -35,58 +37,143 @@
       <section>
 	<h2>Pille Valik</h2>
 	<div>
-	  <img src="Pildid/" />
-	  <img src="Pildid/" />
-	  <img src="Pildid/" />
+	  <a href="https://varjupaik.ee/loomad/83041" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/83041%20(1)_huge.webp" alt="Pablo"></a>
+	  <a href="https://varjupaik.ee/loomad/83814" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/462536226_567465245859715_5278289853786004255_n_block.webp" alt="nasus"></a>
+	  <a href="https://varjupaik.ee/loomad/83512" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/459349851_436604075679294_4529253543357988096_n_block.webp" alt="morgana"></a>
 	</div>
       </section>
 
       <section>
 	<h2>Haraldi Valik</h2>
 	<div>
-	  <img src="Pildid/" />
-	  <img src="Pildid/" />
-	  <img src="Pildid/" />
+		<a href="https://varjupaik.ee/loomad/84136" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/462570080_1149455846778612_4607370264871478103_n%20(1)_medium.webp" alt="Veera"></a>
+		<a href="https://varjupaik.ee/loomad/84130" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/IMG_8711%20(1)_medium.webp" alt="84130"></a>
+		<a href="https://varjupaik.ee/loomad/84135" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/462575191_1500283200740106_7491842982213900654_n%20(3)_block.webp" alt="Katta"></a>
 	</div>
       </section>
 
       <section>
 	<h2>Georgi Valik</h2>
 	<div>
-	  <img src="Pildid/" />
-	  <img src="Pildid/" />
-	  <img src="Pildid/" />
+		<a href="https://varjupaik.ee/loomad/84033" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/IMG_20241105_165438_large.webp" alt="Toby"></a>
+		<a href="https://varjupaik.ee/loomad/83954" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/241031V%C3%B5ruvaldO1_large.webp" alt="Hektor"></a>
+		<a href="https://varjupaik.ee/loomad/83854" target="_blank"><img src="https://media.voog.com/0000/0041/8712/photos/241023V%C3%B5ruvald%2033_huge.webp" alt="Aadu"></a>
 	</div>
       </section>
+
+      <div class="valimineGalerii">
+        <div class="valikuNupud">
+            <div class="puhver"></div>
+            <button onclick="muudaGaleriiPilti(0)" class="nupp valikuNupp valikuNuppAktiivne" id="nupp0"></button>
+            <button onclick="muudaGaleriiPilti(1)" class="nupp valikuNupp" id="nupp1"></button>
+            <button onclick="muudaGaleriiPilti(2)" class="nupp valikuNupp" id="nupp2"></button>
+            <button onclick="muudaGaleriiPilti(3)" class="nupp valikuNupp" id="nupp3"></button>
+            <button onclick="muudaGaleriiPilti(4)" class="nupp valikuNupp" id="nupp4"></button>
+            <button onclick="muudaGaleriiPilti(5)" class="nupp valikuNupp" id="nupp5"></button>
+            <button onclick="muudaGaleriiPilti(6)" class="nupp valikuNupp" id="nupp6"></button>
+            <div class="puhver"></div>
+        </div>
+        <button onclick="valiJargminePilt(-1)" class="nupp nool vasaknool"><img class="nooleIkoon" src="Pildid/Vasak_Nool.svg" alt="vasaknool"></button>
+        <button onclick="valiJargminePilt(1)" class="nupp nool paremnool"><img class="nooleIkoon" src="Pildid/Parem_Nool.svg" alt="paremnool"></button>
+        <div class="sisemineGalerii">
+            <div class="galeriiPilt galeriiPiltAktiivne" id="pilt0" style="background-image: url(https://varjupaik.ee/photos/suviste_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Varjupaiga hoolealused jõuavad varem või hiljem selle päris oma inimese juurde, oma uude päriskoju. Eks ka Taal, kellega Tallinna varjupaigas sõbraks sain. Ole hea, hakka püsiannetajaks, et Taali ja tema saatusekaaslaste elu muuta. Usu mind, sa ei kahetse!</p>
+                    <p class="nimeTekst">- Uku Suviste</p>
+                </div>
+            </div>
+            <div class="galeriiPilt" id="pilt1" style="background-image: url(https://varjupaik.ee/photos/Rey_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Varjupaikade MTÜ toimimine sõltub eelkõige annetustest, seega kutsun üles toetama selle õilsa organisatsiooni tööd püsiannetusega! Hüljatud loomade saatus on paljuski just Sinu kätes. Aita muuta koduta loomade elu ja hakka püsitoetajaks!</p>
+                    <p class="nimeTekst">- Rita Ray</p>
+                </div>
+            </div>
+            <div class="galeriiPilt" id="pilt2" style="background-image: url(https://varjupaik.ee/photos/Tsopp_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Aastaringselt satub varjupaika sadade kaupa kassipoegi, enamasti tõbised ja näljas. Varjupaikade MTÜ aitab soovimatute pesakondade arvukust ohjata, kastreerides-steriliseerides uude koju minevad loomad. Annetades aitad ära hoida üha uute loomade tänavale sattumist.</p>
+                    <p class="nimeTekst">- Jürgen Zopp</p>
+                </div>
+            </div>
+            <div class="galeriiPilt" id="pilt3" style="background-image: url(https://varjupaik.ee/photos/Lemsalu-1_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Mind puudutab väga, kui lemmikloomad hooletusse jäetuna varjupaika jõuavad. Toetan Varjupaikade MTÜ tööd, sest minu püsiannetus aitab hüljatud loomadele uued armastavad kodud leida. Ühine minuga – ka kõige väiksem toetus muudab väga paljude loomade elu!</p>
+                    <p class="nimeTekst">- Liis Lemsalu</p>
+                </div>
+            </div>
+            <div class="galeriiPilt" id="pilt4" style="background-image: url(https://varjupaik.ee/photos/Anett%20Kontaveit_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Pea pooltes Eesti kodudes on lemmikloom pere truu kaaslane. Ja ometi jõuab varjupaika uskumatult palju hüljatud kasse-koeri. Toeta Varjupaikade MTÜ tööd loomadele uue võimaluse andmisel! Mina igatahes toetan.</p>
+                    <p class="nimeTekst">- Anett Kontraveit</p>
+                </div>
+            </div>
+            <div class="galeriiPilt" id="pilt5" style="background-image: url(https://varjupaik.ee/photos/Kanepi-1_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Keskmiselt kulub 3 kuud, et leida varjupaika sattunud loomale uus kodu. Koeraomanikuna tean, kui oluline on loomale, et tal oleks päris oma inimene. Hakka ka sina annetajaks ja aita varjupaiga hoolealustel lõpuks koju jõuda!</p>
+                    <p class="nimeTekst">- Kaia Kanepi</p>
+                </div>
+            </div>
+            <div class="galeriiPilt" id="pilt6" style="background-image: url(https://varjupaik.ee/photos/Ivanov-1_large.jpg);">
+                <div class="tekstiKast">
+                    <p>Ütlen otse ja ilustamata: varjupaiga loomade elu sõltub annetustest. Toeta neid, sest kodutuks jäänud lemmikloomad pole endale ise sellist saatust valinud. Vastutame meie, inimesed.</p>
+                    <p class="nimeTekst">- Vladimir Ivanov</p>
+                </div>
+            </div>
+        </div>
+      </div>
+          
       
     </main>
-
-    
+<br>
+<br>
     <footer>
-      <div>
-	<h3>Tulba pealkiri</h3>
-	<p>
-	  Lõik teksti tulbas<br>
-	  See lõik on teistest pikem<br>
-	  <br>
-	  <br>
-	  Üsna pikk<br>
-	 
-	</p>
-      </div>
-      <div>
-	<h3>Tulba pealkiri</h3>
-	<p>
-	  Lõik teksti tulbas
-	</p>
-      </div>
-      <div>
-	<h3>Tulba pealkiri</h3>
-	<p>
-	  Lõik teksti tulbas
-	</p>
-      </div>
-      
-    </footer>
+		<div>
+	  <h3>Varjupaikade MTÜ (mitteametlik laiendus)</h3>
+	  <p>
+		  Läänemaa tel 5238957
+		  laanemaa@varjupaik.ee <br>
+		  Pärnu tel 5246705 parnu@varjupaik.ee <br>
+		  Saaremaa tel 53090510 saaremaa@varjupaik.ee<br>
+		  Tallinn tel 5141431 tallinn@varjupaik.ee<br>
+		  Valga tel 5299880 valga@varjupaik.ee<br>
+		  Viljandi tel 5238626 viljandi@varjupaik.ee<br>
+		  Võru tel 53404223 voru@varjupaik.ee<br>
+		  Loomade heaolu keskus tel 5046102 keskus@varjupaik.ee<br>
+		  <br>
+		  <br>
+		  Reg. nr: 80249280
+		  Jur. aadress: Rinnaku, Alustre küla, Viljandi vald, Viljandimaa, 71057
+		  info@varjupaik.ee
+		
+	   
+	   
+	  </p>
+		</div>
+		<div>
+	  <h3>Annetusvõimalused</h3>
+	  <p>
+		  SEB: EE561010220068203017<br>
+		  Swedbank: EE342200221043391225 <br>
+		  Luminor: EE241700017003582822<br>
+		  LHV: EE027700771001366179<br>
+		  Coop Pank: EE364204278615079704<br><br>
+  
+		  Annetustelefonid (kuula kõne lõpuni):
+		  900 7000 annetad 5€<br>
+		  900 7110 annetad 10€<br>
+		  900 7125 annetad 25€ <br>
+		  Maksete info tel 53425337
+	  </p>
+		</div>
+		<div>
+	  <h3>Liitu uudiskirjaga!</h3>
+	  <p>
+		  Uudiskiri ilmub 4x aastas, lisaks saadame olulist informatsiooni meie tegemiste kohta.
+	  </p>
+	  <h3> <a href="https://varjupaik.sendsmaily.net/landing-pages/e33fab62-852c-4f23-81a4-46548363856d/html/" target="_blank"> Liitu kohe!</a></h3>
+	  <h3>NB! <br>
+		  See ei ole Varjupaikade MTÜ ametlik koduleht! See veebileht on valminud Sissejuhatus erialasse aine raames.</h3>
+		</div>
+		
+	  </footer>
   </body>
 </html>
